@@ -14,6 +14,7 @@
         "php-coveralls/php-coveralls": "^2.0"
     },
     "require": {
+        "php": ">=7.2",
         "divineomega/uxdm": "^3.0.0",
         "spatie/simple-excel": "0.0.2"
     },
