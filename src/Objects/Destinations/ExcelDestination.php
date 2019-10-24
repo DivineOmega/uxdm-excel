@@ -3,24 +3,29 @@
 namespace DivineOmega\uxdm\Objects\Destinations;
 
 use DivineOmega\uxdm\Interfaces\DestinationInterface;
-use DivineOmega\uxdm\Objects\DataRow;
+use Spatie\SimpleExcel\SimpleExcelWriter;
 
 class ExcelDestination implements DestinationInterface
 {
     private $excelFilePath;
+    private $simpleExcelWriter;
 
     public function __construct(string $excelFilePath)
     {
         $this->excelFilePath = $excelFilePath;
+
+        $this->simpleExcelWriter = SimpleExcelWriter::create($excelFilePath);
     }
 
     public function putDataRows(array $dataRows): void
     {
-        // TODO: Implement putDataRows() method.
+        foreach ($dataRows as $dataRow) {
+            $this->simpleExcelWriter->addRow($dataRow->toArray());
+        }
     }
 
     public function finishMigration(): void
     {
-        // TODO: Implement finishMigration() method.
+        $this->simpleExcelWriter->close();
     }
 }

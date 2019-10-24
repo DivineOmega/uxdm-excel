@@ -10,4 +10,4 @@ Working, but requires documentation.
 
 ## UXDM Excel Destination
 
-Not yet implemented.
+Working, but requires documentation.
