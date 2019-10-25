@@ -21,10 +21,10 @@ The UXDM Excel source allows you to source data from a Microsoft Excel spreadshe
 
 To create a new Excel source, you must provide it with the path to the spreadsheet file (`*.xlsx`) that you wish to use.
 
-The following example creates a Excel source object, using a `User.xlsx` file within the same directory.
+The following example creates a Excel source object, using a `Users.xlsx` file within the same directory.
 
 ```php
-$excelSource = new ExcelSource(__DIR__.'/User.xlsx');
+$excelSource = new ExcelSource(__DIR__.'/Users.xlsx');
 ```
 
 ### Assigning to migrator
@@ -44,10 +44,10 @@ The UXDM Excel destination allows you to migrate data into a Microsoft Excel spr
 
 To create a new Excel destination, you must provide it with the path to the spreadsheet file (`*.xlsx`) that you wish to use.
 
-The following example creates a Excel destination object, using a `User.xlsx` file within the same directory.
+The following example creates a Excel destination object, using a `Users.xlsx` file within the same directory.
 
 ```php
-$excelDestination = new ExcelDestination(__DIR__.'/User.xlsx');
+$excelDestination = new ExcelDestination(__DIR__.'/Users.xlsx');
 ```
 
 ### Assigning to migrator
