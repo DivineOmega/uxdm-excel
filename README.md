@@ -6,7 +6,7 @@ This package provides Microsoft Excel source and destination objects for the [UX
 
 ## Installation
 
-To install the UXDM Eloquent package, just run the following composer 
+To install the UXDM Excel package, just run the following composer 
 command.
 
 ```bash
