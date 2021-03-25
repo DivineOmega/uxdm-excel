@@ -15,7 +15,7 @@
     },
     "require": {
         "php": ">=7.2",
-        "divineomega/uxdm": "^3.0.0",
+        "divineomega/uxdm": "^4.0.0",
         "spatie/simple-excel": "^1.1.0"
     },
     "autoload": {
